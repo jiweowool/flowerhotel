@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowhotel</title>
+    <link rel="stylesheet" href="./css/부트스트랩css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/jquery-ui.min.js"></script>
+    <script src="./script/부트스트랩js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6db5b4fd96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="wrap">
+        <header class="container">
+            <a href="#">
+                <p>고객문의</p>
+            </a>
+            <h1>
+                <a href="#">
+                    <img src="./images/logofff.svg" alt="logo">
+                    <span>플라워호텔</span>
+                </a>
+            </h1>
+
+            <div class="mainmenu">
+                <select>
+                    <option value="한국어">KR</option>
+                    <option value="영어">EN</option>
+                    <option value="일본어">JN</option>
+                </select>
+                <div class="menuicon">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--main top-->
+
+        <div id="mainslid" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active mainimg">
+                    <img src="./images/main.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item mainimg">
+                    <img src="./images/main2.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!--main nev-->
+        <nav>
+            <ul>
+                <li><a href="#">
+                        스페셜 오퍼
+                    </a></li>
+                <li><a href="#">
+                        객실
+                    </a></li>
+                <li><a href="#">
+                        다이닝
+                    </a></li>
+                <li><a href="#">
+                        웨딩&amp;가족연
+                    </a></li>
+                <li><a href="#">
+                        편의시설
+                    </a></li>
+                <li class="point"><a href="#">
+                        예약확인
+                    </a></li>
+            </ul>
+        </nav>
+
+        <!--main text-->
+
+        <div id="contents">
+            <div class="text container">
+                <h2 class="tt">THE HOTEL FLOWER</h2>
+                <P>고객의 작은 관심에도 귀 기울이며,차별화된 서비스와 시설로써 보다 편안하고 안락한 휴식을 제공합니다.</P>
+            </div>
+
+            <!--main submenu-->
+
+            <div class="mainsubmenu">
+                <ul>
+                    <li id="title">
+                        <div class="title">
+                            <p><strong>Check-in</strong></p>
+                            <p class="point">날짜선택</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </li>
+                    <li id="title">
+                        <div class="title">
+                            <p><strong>Check-out</strong></p>
+                            <p class="point">날짜선택</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li id="box">
+                        <p class="box"><strong>Room 1</strong></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li id="box">
+                        <p class="box"><strong>Adult 2</strong></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li id="box">
+                        <p class="box"><strong>Children 0</strong></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li id="box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p><strong>search</strong></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!--submenu-->
+
+            <div id="submenu">
+
+                <ul class="roommenu">
+                    <li>Room 1</li>
+                    <li>Room 2</li>
+                    <li>Room 3</li>
+                    <li>Room 4</li>
+                </ul>
+
+
+
+                <ul class="adultmenu">
+                    <li>Adult 1</li>
+                    <li>Adult 2</li>
+                    <li>Adult 3</li>
+                    <li>Adult 4</li>
+                    <li>Adult 5</li>
+                    <li>Adult 6</li>
+                </ul>
+
+                <ul class="childrenmenu">
+                    <li>Children 0</li>
+                    <li>Children 1</li>
+                    <li>Children 2</li>
+                    <li>Children 3</li>
+                    <li>Children 4</li>
+                    <li>Children 5</li>
+                    <li>Children 6</li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <!--special offers-->
+
+    <section id="event">
+        <div class="container title">
+            <h2 class="tt">SPECIAL OFFERS</h2>
+            <P>호텔 플라워만의 특별한 패키지를 만나보세요.</P>
+        </div>
+
+        <div class="event">
+            <a href="#" class="event1">
+                <figure>
+                    <img src="./images/event2.svg" alt="morning">
+                </figure>
+                <span><!--오버레이--></span>
+                <div class="eventtxt">DELICIOUS MORNING</div>
+            </a>
+            <a href="#" class="event2">
+                <figure>
+                    <img src="./images/event1.svg" alt="spa">
+                </figure>
+                <span><!--오버레이--></span>
+                <div class="eventtxt">로얄 스파 패키지</div>
+            </a>
+            <a href="#" class="event3">
+                <figure>
+                    <img src="./images/event3.svg" alt="sky">
+                </figure>
+                <span><!--오버레이--></span>
+                <div class="eventtxt">스카이 라운지 패키지</div>
+            </a>
+        </div>
+    </section>
+
+    <!--roomtype-->
+
+    <div class="container roomtype">
+        
+        <div class="row">
+            <div class="title">
+                <h2 class="container tt">FLOWER HOTEL ROOMS</h2>
+                <p class="container pp">호텔 플라워만이 드릴 수 있는 편안함과 재충전 공간을 경험하세요</p>
+            </div>
+            <div class="col-12">
+                <a href="#">
+                    <figure>
+                        <!--mouse out했을땐 하얀 배경 over 했을 때 사진 배경-->
+                        <img src="./images/bed1.svg" alt="bed1">
+                    </figure>
+                </a>
+                <div class="text">
+                    <a href="#" class="subtitle">Standard</a>
+                    <a href="#" class="subtitle2">스탠다드</a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Double
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Double Prime
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Twin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Family
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <a href="#">
+                    <figure>
+                        <!--mouse out했을땐 하얀 배경 over 했을 때 사진 배경-->
+                        <img src="./images/bed2.svg" alt="bed2">
+                    </figure>
+                </a>
+                <div class="text">
+                    <a href="#" class="subtitle">Deluxe</a>
+                    <a href="#" class="subtitle2">디럭스</a>
+                    <ul>
+                        <li><a href="#">
+                                Double
+                            </a></li>
+                        <li><a href="#">
+                                Double Prime
+                            </a></li>
+                        <li><a href="#">
+                                Family
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <a href="#">
+                    <figure>
+                        <!--mouse out했을땐 하얀 배경 over 했을 때 사진 배경-->
+                        <img src="./images/bed3.svg" alt="bed3">
+                    </figure>
+                </a>
+                <div class="text">
+                    <a href="#" class="subtitle">
+                        Suite
+                    </a>
+                    <a href="#" class="subtitle2">
+                        스위트
+                    </a>
+                    <ul>
+                        <li><a href="#">
+                                Double
+                            </a></li>
+                        <li><a href="#">
+                                Double Prime
+                            </a></li>
+                        <li><a href="#">
+                                Twin
+                            </a></li>
+                        <li><a href="#">
+                                Family Prime
+                            </a></li>
+                        <li><a href="#">
+                                Ondol
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <a href="#">
+                    <figure>
+                        <!--mouse out했을땐 하얀 배경 over 했을 때 사진 배경-->
+                        <img src="./images/bed4.svg" alt="bed4">
+                    </figure>
+                </a>
+                <div class="text">
+                    <a href="#" class="subtitle">
+                        Premier Suite
+                    </a>
+                    <a href="#" class="subtitle2">
+                        프리미어스위트
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--프리미엄서비스-->
+
+    <div class="container mobile">
+        <h2 class="tt">FLOWER HOTEL PREMIUM</h2>
+        <P>플라워호텔 고객님을 위한 프리미엄 서비스를 소개합니다.</P>
+    </div>
+
+    <section class="service">
+        
+        <div class="container header">
+            <h2 class="tt">FLOWER HOTEL PREMIUM</h2>
+            <P>플라워호텔 고객님을 위한 프리미엄 서비스를 소개합니다.</P>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/slid1.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slid2.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slid3.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div id="contents" class="container">
+            <div class="row ing">
+                <div class="col-4">
+                    <span><!--진행바 넣기--></span>
+                    <p>wedding</p>
+                </div>
+                <div class="col-4">
+                    <span><!--진행바 넣기--></span>
+                    <p>Dinning</p>
+                </div>
+                <div class="col-4">
+                    <span><!--진행바 넣기--></span>
+                    <p>Banquet</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--news-->
+    <section class="container news">
+        <div class="title">
+            <h2 class="tt">NEWS</h2>
+            <i class="fa-solid fa-plus fa-2x"></i>
+        </div>
+        <ul>
+            <li><a href="#">전체</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이벤트</a></li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>
+                    <a href="#">홈페이지 서버점검 안내(11/02)</a>
+                </td>
+                <td class="right">
+                    <a href="#">2023.10.18</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">2024년 부대업장 시설정비 및 점검안내</a>
+                </td>
+                <td class="right">
+                    <a href="#">2023.10.15</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">수영장(가든풀/피크포인트풀)시설정비 및 점검안내</a>
+                </td>
+                <td class="right">
+                    <a href="#">2023.10.15</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">제 11호 태풍 '힌남노'북상에 따른 호텔 이용 공지사항 안내</a>
+                </td>
+                <td class="right">
+                    <a href="#">2023.10.08</a>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+    <!--찾아오시는 길-->
+    <section class="container" id="map">
+        <h2 class="tt">CONTACT</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.155449746344!2d127.0895837!3d37.495207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5cbef53a56b%3A0xb1081d5d42c96dfa!2z7J287JuQIOyXkOy9lO2MjO2BrA!5e0!3m2!1sko!2skr!4v1698202897122!5m2!1sko!2skr"
+            width="1140" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="maptext">
+            <div class="text text1">
+                <i class="fa-solid fa-map-location-dot fa-3x"></i>
+                <p>도로명: 대구광역시 고백구 행복대로 486 플라워호텔</p>
+            </div>
+            <div class="text text15">
+                <p>지&nbsp;&nbsp;&nbsp;번: 대구광역시 고백구 행복동 639-1 플라워호텔</p>
+            </div>
+            <div class="text text2">
+                <i class="fa-solid fa-train-subway fa-3x"></i>
+                <div class="set">
+                    <p class="number">2호선</p>
+                    <p>행복역하차 &gt; 3번출구 도보 약 10분&#40;707m&#41</p>
+                </div>
+            </div>
+            <div class="text text3">
+                <i class="fa-solid fa-bus fa-3x"></i>
+                <div class="set">
+                    <p class="number">2호선</p>
+                    <p>행복대학역하차 &gt; 3번출구 승강장&#40;도보 약 1분 27m&#41;<br> &gt; 486번 버스&#40;행복대학역 건너&#41;탑승
+                        &gt; 시립도서관 하차 &gt; 도보 약 7분&#40;514m&#41;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" id="allbox">
+            <div class="left">
+                <ul class="text1">
+                    <li>
+                        <a href="#">호텔소개</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">오시는길</a>
+                    </li>
+                    <li>
+                        <a href="#">채용안내</a>
+                    </li>
+                </ul>
+                <figure>
+                    <img src="./images/logofff.svg" alt="">
+                </figure>
+
+                <ul class="text2">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+                <div class="lasttext">
+                <p>
+                    대구광역시 고백구 행복대로 486 플라워호텔
+                </p>
+                <p>
+                    &copy; 2023HOTEL FLOWERHOTEL ALL RIGHTS RESERVED.
+                </p>
+                <p>위 작업물은 상업적으로 판매하는 사이트가 아님을 명시합니다.</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram fa-2x" id="instar"></i>
+                    <i class="fa-solid fa-b fa-2x"></i>
+                </div>
+                <div class="text">
+                    <p class="point">일상을<br>특별함으로 가득 채우다</p>
+                    <p>위 작업물은 상업적으로 판매하는 사이트가 아님을 명시합니다.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
