@@ -1,0 +1,1383 @@
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url(../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "TT Ricordi Trial Nobili";
+    src: url(../font/tt_ricordi_nobili/TT\ Ricordi\ Trial\ Nobili.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*부트스트랩css a태그 효과 지우기*/
+ul,
+li {
+    list-style: none;
+}
+
+figure {
+    width: fit-content;
+    height: fit-content;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+iframe {
+    display: block;
+}
+
+html {
+    font-size: 15px;
+}
+.tt {
+    font-family: "TT Ricordi Trial Nobili";
+    font-weight: 900;
+    font-size: 64px;
+    color: #855a34;
+}
+
+/*main*/
+#wrap{
+    max-width: 100%;
+    height: 54.5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+#mainslid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#contents{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+#wrap>header {
+    max-width: 80%;
+    height: 5vw;
+    position: absolute;
+    top: 2%;
+    z-index: 800;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #808080;
+}
+#wrap>header>a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+#wrap>header>a>p{
+    padding-top: 10px;
+}
+#wrap>header h1{
+    width: 15%;
+    height: 10vh;
+}
+#wrap>header h1 img {
+    width: 100%;
+    height: 10vh;
+}
+
+#wrap>header h1 span {
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    position: absolute;
+    overflow: hidden;
+}
+#wrap>header .mainmenu{
+    width: 120px;
+    text-align: 10vh;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    color: #fff;
+}
+#wrap>header .mainmenu button{
+    border: none;
+    background-color: inherit;
+    color: #fff;
+    display: block;
+}
+#wrap>header .mainmenu select{
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    width: 60px;
+    line-height: 6;
+    font-size: large;
+}
+#wrap>header .mainmenu select option{
+    color: #333;
+}
+/*상단메뉴!!!!!!!!!!*/
+#wrap>nav {
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    text-align: center;
+    top: 11.6%;
+    z-index: 810;
+}
+
+#wrap nav .allnav{
+    width: 80%;
+    margin: auto;
+}
+#wrap nav .allnav>ul {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+}
+#wrap>nav .allnav>ul>li{
+    width: 100%;
+    height: 100%;
+    line-height: 5.2;
+}
+#wrap>nav .allnav>ul>li a{
+    display: block;
+}
+#wrap>nav .allnav ul .point{
+    background-color: #cc813f;
+    border-radius: 60px;
+    width: 70%;
+    height: 80%;
+    line-height: 65px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+main nav .allnav .menu>li{
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+}
+
+main nav .allnav ul .point{
+    background-color: #cc813f;
+    border-radius: 60px;
+    width: 70%;
+    height: 80%;
+    line-height: 65px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+main nav .allnav .menu .submenu{
+    display: block;
+    width: 100%;
+    height: 15vw;
+    /*서브메뉴*/
+    text-align: left;
+    background-color: #fff;
+}
+main nav .allnav .menu .submenu li{
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #808080;
+    line-height: 3;
+}
+main nav .allnav .menu .submenu .pp{
+    line-height: 1.5;
+}
+
+main nav .allnav .menu .point .submenu li{
+    border: 2px solid #cc813f;
+    margin:5px 0;
+    line-height: 40px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+main .text {
+    margin-top: 20%;
+    text-align: center;
+}
+
+main .text .tt {
+    font-size: 4.4rem;
+    color: #fff;
+}
+
+main .text p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+/*하단 메뉴!!!!!!!!!!!!!!!!!!!*/
+.mainsubmenu{
+    width: 80%;
+    position: absolute;
+    z-index: 888;
+    top: 70%;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .select {
+    display: inline-block;
+    width: 15%;
+    border: 1px solid #999;
+    background-color: #fff;
+    height: 80px;
+  }
+
+  .select:nth-child(1),
+  .select:nth-child(2){
+    width: 17%;
+  }
+  .select:nth-child(6){
+    width: 19.5%;
+  }
+
+  
+  
+  /*택스트를 중앙으로 보내는 법 물어보기*/
+  
+  .select:nth-child(3) .selected div,
+  .select:nth-child(4) .selected div,
+  .select:nth-child(5) .selected div,
+  .select:nth-child(6) .selected div{
+    line-height: 3;
+  }
+  
+  
+  .select .selected {
+    display: block;
+    padding: 15px 20px;
+    line-height: 0.9;
+  }
+  .select .selected div{
+    float: left;
+  }
+  
+  .select .selected .selected-value {
+    max-width: 90px;
+    margin-right: 55%;
+  }
+  .select:nth-child(2) .selected .selected-value,
+  .select:nth-child(5) .selected .selected-value {
+    margin-right: 45%;
+  }
+  
+  .select .selected .arrow {
+    width: 24px;
+    background: url("https://uxwing.com/wp-content/themes/uxwing/download/02-arrow-direction/arrow-bottom.png") no-repeat 70% 50%;
+    background-size: 50% 50%;
+  }
+  
+  .select ul li,
+  .select .selected .selected-value {
+    white-space: nowrap;
+    /* 줄바꿈 안함 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 말줄임 적용 */
+  }
+  
+  .select ul {
+    width: 120px;
+    border: 1px solid #999;
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-top: none;
+    margin: 1px 0 0 -1px;
+    cursor: pointer;
+  }
+  
+  .select.active ul {
+    display: initial;
+  }
+  
+  .select ul li {
+    padding: 8px 5px;
+  }
+  
+  .select ul li:hover {
+    background: rgba(168, 156, 235, 0.35)
+  }
+/*
+
+.mainsubmenu {
+    position: absolute;
+    z-index: 820;
+    width: 80%;
+    height: 80px;
+    left: 10%;
+    top: 70%;
+    background-color: #fff;
+}
+
+.mainsubmenu .menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+}
+
+.mainsubmenu .menu2>li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid #333;
+    padding-top: 10px;
+}
+.mainsubmenu .menu2>li i{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+.mainsubmenu .menu2>li p{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.mainsubmenu .menu2>li:last-child {
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+}
+.mainsubmenu .menu2>li .search{
+    display: flex;
+}
+.mainsubmenu .menu2>li .icon{
+    margin-right: 10px;
+}
+.mainsubmenu .menu2>li .title {
+    line-height: 10px;
+    width: 70%;
+}
+.mainsubmenu .menu2>li .box{
+    width: 70%;
+}
+.mainsubmenu .menu2>li .title p{
+    display: block;
+    height: 25px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+.mainsubmenu .menu2>li .title .point {
+    color: #808080;
+    margin-top: -15px;
+}
+
+
+.mainsubmenu .menu2 .submenu2{
+    background-color: #fff;
+    width: 100%;
+    height: 251px;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    line-height: 4.1;
+    margin-top: -6px;
+    display: block;
+    /*서브메뉴
+}
+*/
+.mainsubmenu .menu2>li:nth-child(3) .submenu2{
+    overflow: hidden;
+}
+.mainsubmenu .menu2 .submenu2 li{
+    border-top: 1px solid #333;
+}
+.mainsubmenu .menu2 .submenu2 li:last-child{
+    border-bottom: 1px solid #333;
+}
+
+.mainsubmenu .menu2>li:nth-child(3) .set,
+.mainsubmenu .menu2>li:nth-child(4) .set,
+.mainsubmenu .menu2>li:nth-child(5) .set{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 4.25;
+}
+.mainsubmenu .menu2>li:nth-child(3),
+.mainsubmenu .menu2>li:nth-child(4),
+.mainsubmenu .menu2>li:nth-child(5){
+    display: block;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+/*메뉴바 누를시 화면 전환*/
+
+#m_menu{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #866552;
+    z-index: 999;
+    display: none;
+}
+#m_menu .top{
+    width: 100%;
+    height: 130px;
+    background-color: #564339;
+}
+#m_menu .top h1{
+    width: 10%;
+    height: 10vh;
+    margin: auto;
+    padding-top: 20px;
+}
+#m_menu .top h1 img {
+    width: 100%;
+    height: 10vh;
+}
+
+#m_menu .top h1 span {
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+#m_menu .top .icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#m_menu .top .icon button{
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: #fff;
+}
+
+#m_menu .menu{
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+#m_menu .menu>li{
+    width: 13%;
+}
+#m_menu .menu>li>a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 100%;
+    display: block;
+    height: 70px;
+    line-height: 3;
+    border-bottom: 1px solid #9E8475;
+}
+#m_menu .menu .submenu{
+    margin-top: 20px;
+}
+#m_menu .menu .submenu>li>a{
+    color: #d4beb3;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+}
+#m_menu .menu .submenu li{
+    line-height: 2;
+    margin-bottom: 15px;
+}
+#m_menu .menu .submenu .d_menu li{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+#m_menu .menu .submenu .d_menu li>a{
+    width: 100%;
+    display: block;
+}
+#m_menu .menu .submenu .pp{
+    line-height: 1.5;
+}
+
+#m_menu .data{
+    display: flex;
+    position: absolute;
+    right: 30px;
+}
+#m_menu .data p{
+    margin-right: 30px;
+    color: #d4beb3;
+}
+#m_menu .data p::after{
+    content: '';
+    width: 1px;
+    height: 5px;
+    background-color: #d4beb3;
+    display: inline-block;
+    margin-left: 30px;
+}
+#m_menu .data .icon{
+    color: #fff;
+}
+#m_menu .data .icon a{
+    margin-right: 10px;
+}
+
+
+
+
+/*스페셜오퍼*/
+
+#event {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 300px;
+}
+#event .title{
+    width: 100%;
+    margin: auto;
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+}
+
+
+.slide1{
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+}
+.slide1 .slide_box{
+    height: 500px;
+    margin: 0 30px;
+}
+
+
+#event .slide1 .box figure{
+    margin: auto;
+}
+#event .slide1 .box .eventtxt{
+    margin: 20px 0;
+    font-size: 1.5rem;
+
+}
+#event .slide1 .box a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #cc813f;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    border-radius: 100px;
+    color: #fff;
+}
+
+/*roomtype*/
+
+.roomtype{
+    margin-bottom: 300px;
+    width: 100%;
+    height: 93.5vh;
+}
+.roomtype .row .title{
+    margin-bottom: 100px;
+    font-size: 1.3rem;
+}
+
+.roomtype .row .col-12{
+    position: relative;
+    margin-top: -15px;
+}
+
+.roomtype .row .col-12 figure img{
+    opacity: 0;
+}
+.roomtype .row .col-12 figure{
+    border-top: 1px  solid #ccc;
+}
+.roomtype .row .col-12:last-child figure{
+    border-bottom: 1px  solid #ccc;
+}
+
+.roomtype .row .col-12 .text{
+    position: absolute;
+    z-index: 88;
+    top: 0;
+    margin-top: 35px;
+}
+.roomtype .row .col-12 .text a{
+    float: left;
+}
+.roomtype .row .col-12 .text .subtitle{
+    font-size: 2.4rem;
+}
+.roomtype .row .col-12 .text .subtitle2{
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.roomtype .row .col-12 .text ul{
+    display: flex;
+    clear: left;
+}
+.roomtype .row .col-12 .text ul li:not(:last-child){
+    border-right: 1px solid #000;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+/*프리미엄 서비스*/
+.mobile{
+    width: 100%;
+    height: 150px;
+    display: none;
+}
+
+.service{
+    width: 100%;
+    height: 41vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 300px;
+}
+.service #carouselExampleSlidesOnly{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.service .header{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 1%;
+    z-index: 999;
+}
+.service .header .tt{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5rem;
+    width: 100%;
+    color: #fff;
+}
+.service .header p{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+.service #scontents{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: 35%;
+}
+.service #scontents .ing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    height: 8%;
+}
+
+.service #scontents .ing .col-4 span{
+    display: block;
+    width: 66%;
+    height: 5px;
+    background-color: #808080;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*news*/
+
+.news{
+    width: 100%;/*가변값 width:61.6% 고정값을 준 이유: 줄어들때 자연스럽다.*/
+    overflow: hidden;
+    margin: auto;
+    height: 75vh;
+    margin-bottom: 300px;
+}
+
+.news .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news ul{
+    width: 43.86%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.news ul li{
+    text-align: center;
+    width: 30%;
+    border: 2px solid #808080;
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    line-height: 50px;
+    background-color: #ccc;
+    font-size: 1.3rem;
+}
+.news ul li:first-child{
+    background-color: #855a34;
+    color: #fff;
+}
+table{
+    border:collapse;
+    width: 100%;
+    margin-bottom: 300px;
+}
+td{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+    font-size: 1.3rem;
+}
+tr{
+    height: 80px;
+}
+table tr .right{
+    text-align: right;
+    padding-right: 20px;
+}
+
+/*찾아오시는길*/
+
+#map{
+    margin: auto;
+    width: 100%;
+    height: 130vh;
+    margin-bottom: 300px;
+}
+#map .tt{
+    margin-bottom: 50px;
+}
+
+#map iframe{
+    margin-bottom: 100px;
+}
+.maptext{
+    width: 100%;
+    margin: auto;
+}
+
+.maptext .text{
+    display: flex;
+    margin-bottom: 50px;
+    /*background-color: salmon;*/
+    align-items: center;
+}
+.maptext .text i{
+    /*background-color: #808080;*/
+}
+.maptext .text1 .right{
+    /*background-color: #855a34;*/
+    flex-grow: 1;
+    margin-left: 15px;
+}
+.maptext p:not(.number){
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.maptext .text .set{
+    display: flex;
+    /*background-color: slateblue;*/
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 15px;
+}
+.maptext .text2 .icon{
+    width: 52px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.maptext .text .number{
+    font-size: 1.7rem;
+    color: rgb(177, 20, 20);
+    font-weight: 900;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.maptext .text3 .number{
+    margin-bottom: 30px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 650px;
+    margin: auto;
+}
+footer #allbox{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer #allbox .left{
+    width: 60%;
+    height: 100%;
+}
+footer #allbox .left .text1{
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+}
+footer #allbox .left .text1 li{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+footer #allbox .left .text2{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+footer #allbox .left figure{
+    margin: 100px 0;
+}
+footer #allbox .left figure img{
+    width: 35%;
+    height: 200px;
+}
+
+footer #allbox .right{
+    width: 40%;
+    overflow: hidden;
+    text-align: right;
+}
+
+footer #allbox .right .icon{
+    margin: 50px 0;
+}
+footer #allbox .right .icon #instar{
+    margin-right: 20px;
+}
+footer #allbox .right .text{
+    margin-top: 330px;
+}
+footer #allbox .right .text .point{
+    font-size: 2.7rem;
+}
+
+
+
+@media screen and (max-width:1200px){
+    #wrap nav{
+        display: none;
+    }
+
+    #wrap header{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mainsubmenu .menu2 .submenu2{
+        height: 188px;
+    }
+    
+    #map iframe{
+        width: 100%;
+    }
+
+    #event .event .box .eventtxt {
+        font-size: 1.1rem;
+    }
+    .mainsubmenu .menu2>li:last-child i {
+        margin-left: 30%;
+    }
+
+    #m_menu .top h1{
+        width: 15%;
+    }
+
+    #m_menu .menu>li>a{
+        font-size: 1.2rem;
+        height: 60px;
+    }
+    #m_menu .menu .submenu>li>a{
+        font-size: 1rem;
+    }
+    #m_menu .menu .submenu .d_menu li{
+        font-size: 0.9rem;
+    }
+    #m_menu .data{
+        bottom: 20px;
+    }
+    
+}
+@media screen and (max-width:992px){
+
+    .service .header .tt {
+        font-size: 3rem;
+    }
+    footer .container .left .text2{
+        font-size: 0.9rem;
+    }
+    footer #allbox .right .text{
+        font-size: 0.9rem;
+    }
+    footer #allbox .right .text .point{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width:768px){
+    body{height: 760vh;}
+    #wrap{
+        margin-bottom: 400px;
+    }
+    #wrap header>a,
+    #wrap header .mainmenu select{
+        display: none;
+    }
+    #wrap header{
+        display: block;
+        border: none;
+    }
+    #wrap .container>h1{
+        margin: auto;
+        float: left;
+        margin-left: 45%;
+        margin-top: -30px;
+    }
+    .mainsubmenu {
+        width: 100%;
+        left: 0;
+    }
+    #wrap .container .mainmenu{
+        float: right;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main nav{
+        display: none;
+    }
+    main .text .tt{
+        font-size: 2rem;
+    }
+    main .text p{
+        font-size: 1rem;
+    }
+    #m_menu .top h1{
+        width: 20%;
+    }
+    #m_menu .menu{
+        display: block;
+    }
+
+    #m_menu .menu>li{
+        float: left;
+        margin: 0 10px; 
+        width: 16.5%;
+    }
+
+    #m_menu .menu>li:nth-child(6),
+    #m_menu .menu>li:last-child{
+        clear: left;
+        position: absolute;
+        top: 350px;
+        right: 59px;
+    }
+    #m_menu .menu>li:nth-child(6){
+        top: 620px;
+        right: 59px;
+    }
+
+
+    #wrap nav .allnav>ul{
+        display: none;
+    }
+
+    .mainsubmenu .menu2{
+        display: block;
+    }
+    .mainsubmenu .menu2>li{
+        float: left;
+        width: 50%;
+    }
+    .mainsubmenu .menu2>li:nth-child(3){
+        clear: left;
+    }
+    .mainsubmenu .menu2>li:nth-child(3),
+    .mainsubmenu .menu2>li:nth-child(4),
+    .mainsubmenu .menu2>li:nth-child(5){
+        width: 33.3%;
+        background-color: #fff;
+    }
+    .mainsubmenu .menu2>li:last-child{
+        clear:left;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    
+    .tt{
+        font-size: 2.5rem;
+    }
+    #event{
+        margin-bottom: 50px;
+    }
+    .roomtype{
+        height: 75vh;
+        margin-bottom: 200px;
+    }
+    .roomtype .row .col-12 .text{
+        margin-top: 20px;
+    }
+    .roomtype .row .col-12:last-child .text{
+        margin-top: 30px;
+    }
+    .roomtype .row .col-12 .text .subtitle{
+        font-size: 1.5rem;
+    }
+    .roomtype .row .col-12 .text .subtitle2{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .service #scontents{
+        display: none;
+    }
+    .service .header .tt,
+    .service .header p{
+        display: none;
+    }
+    .service{
+        margin-bottom: 200px;
+    }
+    .mobile{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .news{
+        margin-bottom: 200px;
+        height: 55vh;
+    }
+    .news .title{
+        margin-bottom: 50px;
+    }
+    
+    .news ul{
+        display: none;
+    }
+    .maptext{
+        text-align: center;
+    }
+    .maptext .text {
+        display: block;
+    }
+    .maptext .text p{
+        margin-left: 0;
+    }
+    .maptext .text .set{
+        display: block;
+        margin-left: 0;
+        margin: auto;
+    }
+    .maptext .text .icon{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .maptext .text .number{
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+
+
+
+    footer #allbox .right .text>p:first-child{
+        display: none;
+    }
+    footer #allbox .right .text>p:last-child{
+        margin-top: 520px;
+        font-size: 0.7rem;
+    }
+    footer .container .left .text2{
+        font-size: 0.7rem;
+    }
+    body{
+        height: 5725px;
+    }
+}
+
+
+
+@media screen and (max-width:576px){
+    #wrap .container>a,
+    #wrap .container>h1,
+    #wrap .container .mainmenu select{
+        display: none;
+    }
+    menu{
+        background-color: #cc813f;
+    }
+    #wrap .container .mainmenu .menuicon{
+        margin-left: 500px;
+    }
+
+    .mainsubmenu{
+        top: 290px;
+    }
+    #contents .text{
+        margin-top: 130px;
+    }
+    #contents .text p{
+        display: none;
+    }
+    #submenu{
+        top: 163%;
+    }
+    #wrap{
+        margin-bottom: 500px;
+    }
+
+    #m_menu{
+        background-color: #fff;
+    }
+    #m_menu .top{
+        height: 100px;
+        background-color: #808080;
+    }
+    #m_menu .top .icon button{
+        top: 30px;
+    }
+
+    #m_menu .top h1{
+        display: none;
+    }
+    #m_menu .menu{
+        width: 100%;
+    }
+    #m_menu .menu>li{
+        width: 100%;
+        background-color: ;
+        margin: 0;
+        height: 80px;
+        margin-bottom: 0px;
+    }
+    #m_menu .menu>li>a{
+        color: #564339;
+        height: 80px;
+        border-bottom: 1px solid #564339;
+        line-height: 3.5;
+        padding-left: 20px;
+        font-size: 1.5rem;
+    }
+
+    #m_menu .menu .submenu,
+    #m_menu .menu .submenu .d_menu{
+        display: none;
+    }
+    #m_menu .menu>li:nth-child(6),
+    #m_menu .menu>li:last-child{
+        float: left;
+        position: static;
+    }
+    #m_menu .data{
+        display: none;
+    }
+
+
+
+
+
+    #event{
+        margin-bottom: 100px;
+    }
+
+
+    .roomtype{
+        margin-bottom: 0;
+        height: 70vh;
+    }
+    .roomtype .row .col-12 .text{
+        margin-top: 20px;
+    }
+    .roomtype .row .col-12:last-child .text{
+        margin-top: 23px;
+    }
+    .roomtype .row .col-12 .text .subtitle{
+        font-size: 1.5rem;
+    }
+    .roomtype .row .col-12 .text ul{
+        display: none;
+    }
+    .service .header .tt,
+    .service .header p{
+        display: none;
+    }
+    .service{
+        margin-bottom: 200px;
+    }
+    .mobile{
+        display: block;
+        margin-top: 100px;
+    }
+
+    .news ul{
+        display: none;
+    }
+    .news .title{
+        margin-bottom: 50px;
+    }
+    .news{
+        margin-bottom: 100px;
+        height: 55vh;
+    }
+    td{
+        font-size: 1rem;
+    }
+    
+    .maptext .text .number{
+        font-size: 1.2rem;
+    }
+    .maptext p{
+        font-size: 1rem;
+    }
+    .maptext .text .set{
+        width: 80%;
+    }
+
+    
+    footer{
+        height: 450px;
+    }
+    footer #allbox {
+        display: block;
+    }
+    footer #allbox .left{
+        width: 100%;
+    }
+    footer #allbox .left figure{
+    margin: 10px 0;
+    }
+    footer #allbox .left figure img{
+    width: 70%;
+    height: 100px;
+    }
+    footer #allbox .right{
+        display: none;
+    }
+    footer #allbox .left .lasttext{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    body{
+        height: 5250px;
+    }
+}
+@media screen and (max-width:450px){
+    
+    #wrap .container>a,
+    #wrap .container>h1,
+    #wrap .container .mainmenu select{
+        display: none;
+    }
+    menu{
+        background-color: #cc813f;
+    }
+    #wrap .container .mainmenu .menuicon{
+        margin-left: 400px;
+    }
+
+    .mainsubmenu{
+        top: 245px;
+    }
+    #contents .text{
+        margin-top: 110px;
+    }
+    #contents .text p{
+        display: none;
+    }
+    #submenu{
+        top: 160%;
+    }
+
+    #event{
+        margin-bottom: 30px;
+    }
+
+    footer #allbox .left .text2{
+        display: block;
+    }
+    footer #allbox .left .text2 li{
+        margin-bottom: 10px;
+    }
+
+    #event .container p{
+        font-size: 1rem;
+    }
+    .roomtype .row .title .pp{
+        font-size: 1rem;
+    }
+    #wrap{
+        margin-bottom: 500px;
+    }
+    .tt{
+        font-size: 2rem;
+    }
+
+    body{
+        height: 5060px;
+    }
+}
